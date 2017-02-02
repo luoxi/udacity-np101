@@ -54,9 +54,9 @@ def run():
     num_iterations = 1000
     
     #train model
-    print "staring gradient descet at b = {0}, m = {1}, error = {2}".format(initial_b, initial_m, compute_error_for_line_given_points(initial_b, initial_m, points))
+    print("staring gradient descet at b = {0}, m = {1}, error = {2}".format(initial_b, initial_m, compute_error_for_line_given_points(initial_b, initial_m, points)))
     [b, m] = gradient_descent_runner(initial_b, initial_m, points, learning_rate, num_iterations)
-    print "ending point at b = {0}, m = {1}, error = {2}".format(initial_b, initial_m, compute_error_for_line_given_points(b, m, points))
+    print("ending point at b = {0}, m = {1}, error = {2}".format(initial_b, initial_m, compute_error_for_line_given_points(b, m, points)))
 
 if __name__ == '__main__':
     run()
